@@ -3,14 +3,19 @@
 <head>
   <meta charset="utf-8">
   
-  <title>GaoLingXuan</title>
+  <title>拷贝构造函数 | GaoLingXuan</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="GaoLingXuan">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="为了重温以前学过的知识，重写一下string类以复习拷贝控制代码在git有:https://github.com/jsgaolx/C-Lirary.git 构造实现在介绍中，string是表示可变长的字符序列。他常用的构造操作有：初始化string对象的方式123456string s1;string s2(s1);string s2 = s1;string s3(&quot;value&quot;);string">
+<meta name="keywords" content="c++基础">
+<meta property="og:type" content="article">
+<meta property="og:title" content="拷贝构造函数">
+<meta property="og:url" content="http://yoursite.com/2017/07/23/String类的重写/index.html">
 <meta property="og:site_name" content="GaoLingXuan">
+<meta property="og:description" content="为了重温以前学过的知识，重写一下string类以复习拷贝控制代码在git有:https://github.com/jsgaolx/C-Lirary.git 构造实现在介绍中，string是表示可变长的字符序列。他常用的构造操作有：初始化string对象的方式123456string s1;string s2(s1);string s2 = s1;string s3(&quot;value&quot;);string">
+<meta property="og:updated_time" content="2017-07-23T08:22:02.478Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="GaoLingXuan">
+<meta name="twitter:title" content="拷贝构造函数">
+<meta name="twitter:description" content="为了重温以前学过的知识，重写一下string类以复习拷贝控制代码在git有:https://github.com/jsgaolx/C-Lirary.git 构造实现在介绍中，string是表示可变长的字符序列。他常用的构造操作有：初始化string对象的方式123456string s1;string s2(s1);string s2 = s1;string s3(&quot;value&quot;);string">
   
     <link rel="alternate" href="/atom.xml" title="GaoLingXuan" type="application/atom+xml">
   
@@ -59,9 +64,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-String类的重写" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-String类的重写" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/07/23/String类的重写/" class="article-date">
   <time datetime="2017-07-23T04:21:11.000Z" itemprop="datePublished">2017-07-23</time>
@@ -74,8 +77,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/23/String类的重写/">拷贝构造函数</a>
+    <h1 class="article-title" itemprop="name">
+      拷贝构造函数
     </h1>
   
 
@@ -108,140 +111,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hexo的使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/hexo的使用/" class="article-date">
-  <time datetime="2017-07-15T09:35:44.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/hexo的使用/">hexo的使用</a>
-    </h1>
+    <a href="/2017/07/15/hexo的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ancien</strong>
+      <div class="article-nav-title">hexo的使用</div>
+    </a>
   
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>本机发布<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure></p>
-<p>提交<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div><div class="line">$ hexo deploy</div></pre></td></tr></table></figure></p>
-<p>这些可以简写为<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo s</div><div class="line">$ hexo g</div><div class="line">$ hexo d</div></pre></td></tr></table></figure></p>
-<p>  新建<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo <span class="keyword">new</span> <span class="string">"这儿写文章名"</span></div></pre></td></tr></table></figure></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/hexo的使用/" data-id="cj5ggh4nn0002swv7mh92jpre" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-git的初步使用" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/git的初步使用/" class="article-date">
-  <time datetime="2017-07-15T08:06:26.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/git的初步使用/">git的初步使用</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="git使用"><a href="#git使用" class="headerlink" title="git使用"></a>git使用</h2><h3 id="git创建"><a href="#git创建" class="headerlink" title="git创建"></a>git创建</h3><p>第一步选择一个文件夹创建版本库</p>
-<h4 id="创建空目录"><a href="#创建空目录" class="headerlink" title="创建空目录"></a>创建空目录</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ mkdir learngit</div><div class="line">$ cd learngit</div><div class="line">$ pwd</div></pre></td></tr></table></figure>
-<p>mkdir 命令 创建一个文件夹<br>cd    命令 到这个文件下<br>pwd   命令 显示当前目录</p>
-<h4 id="通过git-init命令把这个目录变为Git可以管理的仓库"><a href="#通过git-init命令把这个目录变为Git可以管理的仓库" class="headerlink" title="通过git init命令把这个目录变为Git可以管理的仓库"></a>通过git init命令把这个目录变为Git可以管理的仓库</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git init</div></pre></td></tr></table></figure>
-<p>这样GIT就把仓库建好了，并且是一个空的仓库(empty Git repository),这时当前目录下就多了一个.git的目录,这个目录是Git来跟踪管理版本库的.</p>
-<h3 id="把文件添加到版本库"><a href="#把文件添加到版本库" class="headerlink" title="把文件添加到版本库"></a>把文件添加到版本库</h3><p>版本控制系统只能跟踪文件文本的改动.<br>现在我编写一个readme.txt的文件,<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Git is a version control system.</div></pre></td></tr></table></figure></p>
-<p>一定要把这个文件放到learngit目录下.</p>
-<h4 id="使用add来添加文件"><a href="#使用add来添加文件" class="headerlink" title="使用add来添加文件"></a>使用add来添加文件</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$git add readme.txt</div></pre></td></tr></table></figure>
-<h4 id="使用commit来提交文件"><a href="#使用commit来提交文件" class="headerlink" title="使用commit来提交文件"></a>使用commit来提交文件</h4><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$git commit -m<span class="string">"提交文件"</span></div></pre></td></tr></table></figure>
-<p>git commit中的-m是记录本次提交的日志,以方便你自己知道每次提交时的改动.</p>
-<h4 id="使用push来同步文件"><a href="#使用push来同步文件" class="headerlink" title="使用push来同步文件"></a>使用push来同步文件</h4><p>这样之后在你的本地已经很有了一个Git库了,但是如果想在Github创建一个Git仓库,让这两个仓库进行远程同步的话就要进行其他操作了.<br>首先在Github创建一个新的仓库:复制仓库的地址<br>然后在本地的仓库把内容推送到Github仓库中去<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$git remote add origin git@github.com:jsgaolx/learngit.git</div></pre></td></tr></table></figure></p>
-<p>注意git@github.com:jsgaolx/learngit.git这个是你自己的仓库地址<br>其中的origin是远程库的名字,也可以用其他叫法.<br>下一步就是把本地库的所有内容推送到远程库上:<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push -u origin master</div></pre></td></tr></table></figure></p>
-<p>把本地库的内容推送到远程,用git push命令,实际上是把当前分支masster推送到远程<br>由于第一次远程库是空的,所以要加上-u参数,在以后的推送或者拉取时就可以采用简化命令.<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git push</div></pre></td></tr></table></figure></p>
-<h3 id="git提交分为"><a href="#git提交分为" class="headerlink" title="git提交分为"></a>git提交分为</h3><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ git add </div><div class="line">$ git commit -m <span class="string">""</span></div><div class="line">$ git push</div></pre></td></tr></table></figure>
-<p>其中最好加上<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git status</div></pre></td></tr></table></figure></p>
-<p>这个是查看有了什么变化.</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/git的初步使用/" data-id="cj5ggh4o70005swv7wiftco4v" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-第一篇博客" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/07/15/第一篇博客/" class="article-date">
-  <time datetime="2017-07-15T06:42:29.000Z" itemprop="datePublished">2017-07-15</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/07/15/第一篇博客/">第一篇博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>测试文。</p>
-<h2 id="2017-07-15"><a href="#2017-07-15" class="headerlink" title="2017-07-15"></a>2017-07-15</h2><h3 id="联系方式"><a href="#联系方式" class="headerlink" title="联系方式"></a>联系方式</h3><p>电话：13057571120<br>email：136084727@qq.com</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/07/15/第一篇博客/" data-id="cj5ggh4oe0006swv76qtmmmrp" class="article-share-link">Partager</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
 
 </section>
         
